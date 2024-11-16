@@ -1,0 +1,377 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "Greetings",
+        "Hi, how are you?"
+      ],
+      "responses": [
+        "Welcome to Amerikas Restaurant! How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "menu",
+      "patterns": [
+        "What's on the menu?",
+        "Can you tell me about your dishes?",
+        "What do you serve?",
+        "Menu please",
+        "Do you have vegetarian options?"
+      ],
+      "responses": [
+        "Certainly! Are you looking for starters, lunch, or dinner?"
+        
+      ]
+    },
+      {
+        "tag": "starters",
+        "patterns": [
+          "Starters",
+          "Appetizers",
+          "Do you have any starters?"
+        ],
+        "responses": [
+          "Our starters menu includes: Garlic Bread, Bruschetta, Calamari, and Caprese Salad. ",
+          "For starters, we have: Spring Rolls, Buffalo Wings, Shrimp Cocktail, and Spinach Artichoke Dip. "
+        ]
+      },
+      {
+        "tag": "lunch",
+        "patterns": [
+          "Lunch menu",
+          "What's for lunch?",
+          "Do you serve lunch?"
+        ],
+        "responses": [
+          "Our lunch menu offers a variety of options. Would you like to hear the choices?",
+          "For lunch, we have: Grilled Chicken Sandwich, Caesar Salad, Fish Tacos, and Veggie Wrap."
+        ]
+      },
+      {
+        "tag": "dinner",
+        "patterns": [
+          "Dinner menu",
+          "What's for dinner?",
+          "Do you serve dinner?"
+        ],
+        "responses": [
+          "For dinner, we offer: Ribeye Steak, Lobster Ravioli, Chicken Marsala, and Eggplant Parmesan. "
+        ]
+      },
+      {
+        "tag": "reservation",
+        "patterns": [
+          "I'd like to make a reservation",
+          "Can I book a table?",
+          "Reservation please",
+          "Table booking",
+          "Do you accept walk-ins?"
+        ],
+        "responses": [
+          "Of course! How many people will be joining you?",
+          "Certainly! When would you like to dine with us and for how many guests ?",
+          "We accept both reservations and walk-ins. How many guests are you expecting?"
+        ]
+      },
+      {
+        "tag": "reservation_details",
+        "patterns": [
+          "[] people ",          
+          "people [] "
+        ],
+        "responses": [
+          "Great! And for what date and time would you like to make the reservation?",
+          "Thank you! Can you please provide the date and time for the reservation?",
+          "Perfect! Just let me know the date and time you prefer.",
+          "Wonderful! Could you please specify the date and time for the reservation?"
+        ]
+      },
+      {
+        "tag": "reservation_confirmation",
+        "patterns": [
+          "date- [] time- [] ",
+          "We'd like to reserve for [] on [] at []",
+          "We'll  on [] at []",
+          "Reservation on [] at []"
+        ],
+        "responses": [
+          "Thank you for providing the details! Your reservation is confirmed. We look forward to welcoming you.",
+          "Reservation confirmed! We're excited to have you dine with us."
+        ]
+      },      
+      {
+        "tag": "opening_hours",
+        "patterns": [
+          "What are your opening hours?",
+          "When are you open?",
+          "Hours of operation",
+          "When can I visit?",
+          "Are you open on weekends?"
+        ],
+        "responses": [
+          "We are open from 11:00 AM to 10:00 PM every day. We look forward to seeing you!",
+          "Our opening hours are from 11:00 AM to 10:00 PM daily. Feel free to drop by!",
+          "You can visit us any day between 11:00 AM and 10:00 PM. We can't wait to serve you!",
+          "We're open daily from 11:00 AM until 10:00 PM. We hope to see you soon!"
+        ]
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where are you located?",
+          "What's your address?",
+          "Location please",
+          "How do I find you?",
+          "Is there parking available?"
+        ],
+        "responses": [
+          "We are located at 734 Lake St, Oak Park, IL 60301, United States. Here's a map link for directions: https://maps.app.goo.gl/Mf7uitzhannfjNFZ7 ",
+          "You can find us at 734 Lake St, Oak Park, IL 60301, United States. Need directions? Let me assist you with that:- https://maps.app.goo.gl/Mf7uitzhannfjNFZ7 ",
+          "Our restaurant is situated at 734 Lake St, Oak Park, IL 60301, United States. Feel free to use the map link to navigate:- https://maps.app.goo.gl/Mf7uitzhannfjNFZ7 ",
+          "We have parking available for our customers. Here's how to find us: 734 Lake St, Oak Park, IL 60301, United States, ZIP:- https://maps.app.goo.gl/Mf7uitzhannfjNFZ7 "
+        ]
+      }
+    ,
+    {
+      "tag": "special_requests",
+      "patterns": [
+        "Do you have any specials?",
+        "Are there any discounts available?",
+        "Can I customize my order?",
+        "Do you have a kids' menu?",
+        "Do you cater for events?"
+      ],
+      "responses": [
+       "Happy Hour Specials: Enjoy discounted drinks and appetizers from 5 PM to 7 PM daily. Unwind and relax with friends and family!",
+       "Family Feast: Get 20% off your entire bill when you dine with family on weekends. Treat your loved ones to a delicious meal!",
+       "Loyalty Rewards: Earn points with every purchase and redeem them for discounts on future visits. Join our loyalty program today!",
+       "Seasonal Specials: Try our chef's special creations using the freshest seasonal ingredients. A culinary experience you won't want to miss!",
+       "Kids Eat Free: Every Sunday, kids under 12 eat for free with the purchase of an adult meal. A great way to enjoy a family meal together!",
+       "Wine Wednesdays: Get 50% off select bottles of wine every Wednesday. Perfect for a midweek treat!",
+       "Dessert Delight: Enjoy a complimentary dessert with the purchase of an entrée. Satisfy your sweet tooth!",
+       "Early Bird Discount: Get 15% off your bill when you dine with us before 6 PM. Start your evening off right!",
+       "Takeout Tuesday: Save 10% on all takeout orders every Tuesday. Enjoy your favorite dishes at home!",
+       "Live Music Nights: Join us for live music on [Day] and enjoy 10% off your entire bill. A great night of food, music, and fun!"
+        ]
+        },
+       {
+        "tag": "feedback",
+        "patterns": [
+          "I have feedback - your food was []",
+          "I have feedback - your customer service was []",
+          "I'd like to provide feedback - your food was []",
+          "I want to leave a review - your food was []",
+          "Your food was [] and I'd like to give feedback"
+        ],
+        "responses": [
+          "Thank you for your feedback! We appreciate your comments about our food and will take them into account.",
+          "Thank you for sharing your experience. We value your feedback and will use it to improve our offerings.",
+          "Your feedback on our food is appreciated! Thank you for taking the time to let us know your thoughts."
+        ]
+      },
+        {
+        "tag": "goodbye",
+        "patterns": [
+        "Thank you, bye",
+        "Goodbye",
+        "See you later",
+        "Bye for now",
+        "Take care"
+        ],
+        "responses": [
+        "Thank you for dining with us! Have a great day.",
+        "Goodbye! We hope to see you again soon.",
+        "See you later! Thank you for visiting us.",
+        "Bye for now! Take care and come back soon.",
+        "Take care! Looking forward to your next visit."
+        ]
+        },
+        {
+        "tag": "order_placement",
+        "patterns": [
+          "I want to place an order",
+          "I'd like to order"
+        ],
+        "responses": [
+          "You can place your order here! What would you like to order?"
+        ]
+      },
+      
+      {
+        "tag": "order_confirmation",
+        "patterns": [
+          "I want to order []"
+        ],
+        "responses": [
+          " Absolutely, let's start your order. Are you looking for delivery or pickup? "
+        ]
+      },
+       {
+        "tag": "delivery_order",
+        "patterns": [
+          "delivery",
+          "I want to get it delivered"
+        ],
+        "responses": [
+          " OK what's your delivery address? "
+        ]
+      },
+      {
+        "tag": "delivery_address",
+        "patterns": [
+          "My address is []"
+        ],
+        "responses": [
+          " And what's your phone number?"
+        ]
+      },
+      {
+        "tag": "phno",
+        "patterns": [
+          "My phone number is []"
+        ],
+        "responses": [
+          " Ok your order is confirmed, You can pay using debit/credit card or cash at your door. We will arrive within 30 mins "
+        ]
+      },
+      {
+        "tag": "takeaway_order",
+        "patterns": [
+          "takeaway",
+          "pickup",
+          "carryout",
+          "carry-out",
+          "carry out"
+        ],
+        "responses": [
+          " Ok your order is confirmed,I will get ready in 25 mins You can pay using debit/credit card or cash in store. Store Address- 734 Lake St, Oak Park, IL 60301, United States  https://maps.app.goo.gl/ziWzEGduRmGPD5q59  "
+        ]
+      },
+
+  {
+        "tag": "order_address",
+        "patterns": [
+          "I want to place an order",
+          "Can I order delivery?",
+          "Can I get takeout?",
+          "I'd like to order"
+        ],
+        "responses": [
+          "You can place your order here! What would you like to order?",
+          "Absolutely, let's start your order. Are you looking for delivery or takeout?"
+        ]
+      },
+
+      {
+        "tag": "order_tracking",
+        "patterns": [
+          "Where is my order?",
+          "How long until my order is ready?",
+          "Is my order on its way?",
+          "Can I track my order?"
+        ],
+        "responses": [
+          "Let me check the status of your order. Please wait a moment. You will receive your order status on your phone shortly ",
+          "Your order is currently being prepared. We'll let you know when it's ready.",
+          "Your order is on its way! It should arrive shortly."
+        ]
+      },
+      {
+        "tag": "recommendations",
+        "patterns": [
+          "What is your popular recommendation?",
+          "Can you recommend something?",
+          "What do you suggest?",
+          "What's your chef's special?"
+        ],
+        "responses": [
+          "Our most popular dishes are Shai panner, dal makhani and chicken tikka ",
+          "Based on your previous orders, I recommend Shai panner, dal makhani and chicken tikka.",
+          "Today's chef's special is Shai panner, dal makhani and chicken tikka. Would you like to hear more about it?"
+        ]
+      },
+      {
+        "tag": "event_booking",
+        "patterns": [
+          "Can I book a party?",
+          "Do you host events?",
+          "I'd like to plan an event",
+          "Can I book a private room?"
+        ],
+        "responses": [
+          "Yes, we can help you book a party or event on our website i.e www.AmerikasRestaurant.com "
+          
+        ]
+      },
+      {
+        "tag": "loyalty_program",
+        "patterns": [
+          "Do you have a loyalty program?",
+          "How can I earn rewards?",
+          "What rewards can I get?",
+          "How do I redeem my points?"
+        ],
+        "responses": [
+          "Yes, we have a loyalty program. You can earn points with each purchase.",
+          "You can redeem your points for discounts or free items.",
+          "Here's how you can earn rewards: You can redeem your points for discounts or free items."
+        ]
+      },
+      {
+        "tag": "gift_cards",
+        "patterns": [
+          "Can I buy a gift card?",
+          "How do I purchase a gift card?",
+          "Can I redeem a gift card?",
+          "Do you offer digital gift cards?"
+        ],
+        "responses": [
+          "Yes, you can buy gift cards. You can buy a physical or digital after coming in the store . The maximum limit on our gift card is $1000 "
+          
+          
+        ]
+      },
+      {
+        "tag": "dietary_restrictions",
+        "patterns": [
+          "Do you have gluten-free options?",
+          "I need a vegan meal"
+        ],
+        "responses": [
+          "Yes, we have gluten-free/vegan options for all dishes. We will take care that your food orded is as per your requirements"
+        ]
+      },
+      {
+        "tag": "wait_time",
+        "patterns": [
+          "What's the current wait time?",
+          "Is there a long wait?",
+          "How long until I can be seated?",
+          "Can I get an update on the wait time?"
+        ],
+        "responses": [
+          "Let me check the current wait time for you. Please hold on a moment.......oK so the waiting time is just 20 mins",
+          "Currently, the wait time is about 30 mins.Sorry for the inconvinience"
+        ]
+      },
+      {
+        "tag": "payment_options",
+        "patterns": [
+          "What payment methods do you accept?",
+          "Can I pay contactless?",
+          "Do you accept digital wallets?",
+          "Can I split the bill?"
+        ],
+        "responses": [
+          "We accept cash, credit/debit cards, and digital wallets such as phone pay, paytm .",
+          "You can use digital wallets such as phone pay, paytm. "
+        ]
+      }
+      ]
+    }
